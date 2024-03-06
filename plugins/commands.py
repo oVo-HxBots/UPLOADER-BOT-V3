@@ -1,5 +1,3 @@
-
-
 import os
 import time
 import psutil
@@ -25,9 +23,6 @@ async def start(bot, update):
     await bot.send_message(
         Config.LOG_CHANNEL,
            f"#NEW_USER: \n\nNew User [{update.from_user.first_name}](tg://user?id={update.from_user.id}) started @{Config.BOT_USERNAME} !!"
-    )
-    await bot.send_chat_action(
-       chat_id=update.chat.id
     )
     if Config.UPDATES_CHANNEL:
       fsub = await handle_force_subscribe(bot, update)
