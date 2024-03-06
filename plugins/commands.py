@@ -1,4 +1,3 @@
-# 🖤💗 Developede by @LISA_FAN_LK | @UploadLinkToFileBot
 
 
 import os
@@ -28,8 +27,7 @@ async def start(bot, update):
            f"#NEW_USER: \n\nNew User [{update.from_user.first_name}](tg://user?id={update.from_user.id}) started @{Config.BOT_USERNAME} !!"
     )
     await bot.send_chat_action(
-       chat_id=update.chat.id,
-       action="typing"
+       chat_id=update.chat.id
     )
     if Config.UPDATES_CHANNEL:
       fsub = await handle_force_subscribe(bot, update)
