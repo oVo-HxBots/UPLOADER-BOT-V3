@@ -11,7 +11,7 @@ from plugins.config import Config
 import time
 from plugins.translation import Translation
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
-from pyrogram import filters
+from pyrogram import filters, enums
 from pyrogram import Client
 from functions.forcesub import handle_force_subscribe
 from functions.display_progress import humanbytes
